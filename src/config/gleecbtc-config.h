@@ -12,7 +12,7 @@
 /* #undef CHAR_EQUALS_INT8 */
 
 /* Version Build */
-#define CLIENT_VERSION_BUILD 1
+#define CLIENT_VERSION_BUILD 4
 
 /* Version is release */
 #define CLIENT_VERSION_IS_RELEASE true
@@ -21,7 +21,7 @@
 #define CLIENT_VERSION_MAJOR 0
 
 /* Minor version */
-#define CLIENT_VERSION_MINOR 19
+#define CLIENT_VERSION_MINOR 20
 
 /* Build revision */
 #define CLIENT_VERSION_REVISION 0
@@ -36,7 +36,7 @@
 #define COPYRIGHT_HOLDERS_SUBSTITUTION "GleecBTC Core"
 
 /* Copyright year */
-#define COPYRIGHT_YEAR 2020
+#define COPYRIGHT_YEAR 2021
 
 /* Define this symbol to build code that uses AVX2 intrinsics */
 #define ENABLE_AVX2 1
@@ -54,7 +54,7 @@
 #define ENABLE_WALLET 1
 
 /* Define to 1 to enable ZMQ functions */
-#define ENABLE_ZMQ 1
+#define ENABLE_ZMQ 0
 
 /* parameter and return value type for __fdelt_chk */
 /* #undef FDELT_TYPE */
@@ -75,7 +75,7 @@
 #define HAVE_BOOST_THREAD /**/
 
 /* define if the Boost::Unit_Test_Framework library is available */
-/* #undef HAVE_BOOST_UNIT_TEST_FRAMEWORK */
+#define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
 
 /* Define to 1 if you have the <byteswap.h> header file. */
 /* #undef HAVE_BYTESWAP_H */
@@ -120,7 +120,7 @@
 
 /* Define to 1 if you have the declaration of `EVP_MD_CTX_new', and to 0 if
    you don't. */
-#define HAVE_DECL_EVP_MD_CTX_NEW 0
+#define HAVE_DECL_EVP_MD_CTX_NEW 1
 
 /* Define to 1 if you have the declaration of `freeifaddrs', and to 0 if you
    don't. */
@@ -206,7 +206,7 @@
 
 /* Define this symbol if the BSD getentropy system call is available with
    sys/random.h */
-/* #undef HAVE_GETENTROPY_RAND */
+#define HAVE_GETENTROPY_RAND 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -383,7 +383,7 @@
 #define PACKAGE_NAME "GleecBTC Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "GleecBTC Core 0.20.0.3"
+#define PACKAGE_STRING "GleecBTC Core 0.20.0.4"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "gleecbtc"
@@ -392,17 +392,17 @@
 #define PACKAGE_URL "https://gleecbtc.com/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.20.0.3"
+#define PACKAGE_VERSION "0.20.0.4"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
 /* #undef PTHREAD_CREATE_JOINABLE */
 
 /* Define this symbol if the qt platform is cocoa */
-#define QT_QPA_PLATFORM_COCOA 1
+/* #undef QT_QPA_PLATFORM_COCOA */
 
 /* Define this symbol if the minimal qt platform exists */
-#define QT_QPA_PLATFORM_MINIMAL 1
+/* #undef QT_QPA_PLATFORM_MINIMAL */
 
 /* Define this symbol if the qt platform is windows */
 /* #undef QT_QPA_PLATFORM_WINDOWS */
@@ -411,7 +411,7 @@
 /* #undef QT_QPA_PLATFORM_XCB */
 
 /* Define this symbol if qt plugins are static */
-#define QT_STATICPLUGIN 1
+/* #undef QT_STATICPLUGIN */
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
